@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-const ProductDesc = () => {
+const ProductDescription = () => {
   return (
     <div>
       <section className="bg-white py-12">
@@ -119,4 +119,4 @@ const ProductDesc = () => {
   );
 };
 
-export default ProductDesc;
+export default ProductDescription;
