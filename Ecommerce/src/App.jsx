@@ -1,22 +1,26 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './Pages/HomePage';
-
-// import MobilePage from './Pages/MobilePage';
-// import Login from './Pages/Login';
-// import SignUp from './Pages/SignUp';
-// import CheckOut from './Components/CheckOut';
-// import NoPage from './Components/NoPage';
-// import ProductDescription from './Components/ProductDescription';
-// import WishList from './Components/WishList';
-// import ContactPage from './Pages/ContactPage';
-// import FAQPage from './Pages/FAQPage';
-// import ReturnsPage from './Pages/ReturnsPage';
-// import OrderTrackingPage from './Pages/OrderTrackingPage';
-// import PrivacyPolicyPage from './Pages/PrivacyPolicy';
-// import TermsAndConditionsPage from './Pages/TermsAndConditionsPage';
-
 import ProductDesc from './Pages/ProductDesc.jsx';
+import CheckOut from './Pages/CheckOut';
+import SignupPage from './Pages/SignupPage';
+import LoginPage from './Pages/LoginPage';
+
+import MobilesPage from './Pages/MobilesPage';
+
+import WishListPage from './Pages/WishListPage';
+import LaptopPage from './Pages/LaptopPage';
+import TvPage from './Pages/TvPage';
+import OrderTracking from './Pages/OrderTracking';
+import Contact from './Pages/Contact';
+import Returns from './Pages/Returns';
+import FAQ from './Pages/FAQ';
+import PrivacyPolicy from './Pages/PrivacyPolicy';
+import TermsAndCondition from './Pages/TermsAndCondition';
+
+// import NoPage from './Components/NoPage';
+
+
 
 
 const App = () => {
@@ -25,18 +29,23 @@ const App = () => {
       <Routes>
         <Route path="/home" element={<HomePage />} />
         <Route path='product' element={<ProductDesc/>}/>
-        {/* <Route path="/checkout" element={<CheckOut />} />
-        <Route path="/wishlist" element={<WishList />} />
-        <Route path="/" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/mobile" element={<MobilePage />} />
-        <Route path="*" element={<NoPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/faqs" element={<FAQPage />} />
-        <Route path="/returns" element={<ReturnsPage />} />
-        <Route path="/ordertracking" element={<OrderTrackingPage />} />
-        <Route path="/privacypolicy" element={<PrivacyPolicyPage />} />
-        <Route path="/terms&Conditions" element={<TermsAndConditionsPage />} /> */}
+        <Route path="/checkout" element={<CheckOut />} />
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/mobile" element={<MobilesPage />} />
+        <Route path="/wishlist" element={<WishListPage />} />
+
+        <Route path="/laptop" element={<LaptopPage />} />
+        <Route path="/tv" element={<TvPage />} />
+        <Route path="/ordertracking" element={<OrderTracking />} />
+        <Route path="/contact" element={<Contact />} />
+
+        <Route path="/returns" element={<Returns />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+        <Route path="/termsandcondition" element={<TermsAndCondition />} /> 
+
+       
 
       </Routes>
     </BrowserRouter>

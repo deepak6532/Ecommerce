@@ -1,12 +1,13 @@
 import React from "react";
 import Footer from "../Components/Footer";
 import NavBar from "../Components/NavBar";
-import Card from "../Components/Card";
+import LaptopCard from "../Components/LaptopCard";
 
 const MobilesPage = () => {
   return (
     <div className="bg-blue-100">
       <NavBar />
+
       <section className="py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-8">
           {/* Filters Sidebar */}
@@ -152,9 +153,9 @@ const MobilesPage = () => {
           {/* Products Grid */}
           <div className="mx-auto p-8 bg-gray-100 rounded-xl shadow-2xl shadow-blue-300">
             <div className="flex flex-wrap gap-8">
-              <Card />
-              <Card />
-              <Card />
+              <LaptopCard />
+              <LaptopCard />
+              <LaptopCard />
             </div>
           </div>
         </div>

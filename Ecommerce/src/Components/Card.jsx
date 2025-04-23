@@ -3,7 +3,7 @@ import React from 'react'
 const Card = () => {
   return (
    <div className="max-w-xs bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-  <div className="relative">
+  <div className="relative ">
     <img className="w-full h-48 object-cover" src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1744726772/Croma%20Assets/CMS/LP%20Page%20Banners/2025/Whats%20Hot/April/16042025/Desktop/HP_Whats_Hot_AC_16April2025_grmquv.jpg" alt="Product Image" />
     <span className="absolute top-2 left-2 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">25% OFF</span>
   </div>

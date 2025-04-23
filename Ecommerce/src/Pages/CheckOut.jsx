@@ -1,12 +1,15 @@
 import React from 'react'
-import Navbar from "../Components/AddToCart";
+
+
+import NavBar from "../Components/NavBar";
 import AddToCart from "../Components/AddToCart";
 import Footer from "../Components/Footer";
+
 
 const CheckOut = () => {
   return (
     <div>
-        <Navbar />
+        <NavBar />
         <AddToCart />
         <Footer />
     </div>
